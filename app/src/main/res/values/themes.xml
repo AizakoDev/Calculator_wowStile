@@ -12,5 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="background">@drawable/custom_bottom</item>
+        <item name="colorButtonNormal">@drawable/custom_bottom</item>
+        <item name="colorControlHighlight">@color/For_MyCalculator_bottom</item>
     </style>
 </resources>
