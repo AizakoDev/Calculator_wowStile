@@ -7,7 +7,7 @@
     <ripple android:color="?attr/colorControlHighlight">
         <item>
             <shape android:shape="rectangle"
-                android:tint="@color/For_MyCalculator_bottom">
+                android:tint="@color/teal_200">
                 <corners android:radius="10dp"/>
                 <solid android:color="@color/For_MyCalculator_bottom"/>
                 <padding android:bottom="6dp"/>
