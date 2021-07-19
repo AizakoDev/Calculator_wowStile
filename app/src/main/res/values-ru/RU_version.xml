@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Calculator_wowStile</string>
     <string name="c">C</string>
@@ -17,5 +18,5 @@
     <string name="separate">/</string>
     <string name="_1">1</string>
     <string name="_3">3</string>
-    <string name="program_name">Calculator</string>
+    <string name="program_name">Калькулятор</string>
 </resources>

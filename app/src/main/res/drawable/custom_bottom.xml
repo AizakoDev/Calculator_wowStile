@@ -4,5 +4,4 @@
     <gradient android:startColor="#15E0CC" android:endColor="@color/For_MyCalculator_bottom" android:type="linear"></gradient>
     <corners android:radius="10dp"></corners>
 
-//не получилось сделать градиент с помощью этого файла!(
 </shape>
