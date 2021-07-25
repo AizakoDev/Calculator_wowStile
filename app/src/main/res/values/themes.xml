@@ -1,10 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Calculator_wowStile" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Primary brand color. -->
+    <style name="Calculator_wowStile" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!--Primary brand color. -->
+        <item name="android:textColor">@color/black</item>
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/purple_200</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
@@ -16,4 +17,23 @@
         <item name="colorButtonNormal">@drawable/custom_bottom</item>
         <item name="colorControlHighlight">@color/For_MyCalculator_bottom</item>
     </style>
+
+    <style name="Calculator_secondTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/purple_200</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/purple_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="background">@color/purple_500</item>
+        <item name="colorButtonNormal">@color/purple_700</item>
+        <item name="colorControlHighlight">@color/purple_200</item>
+    </style>
+
+
 </resources>

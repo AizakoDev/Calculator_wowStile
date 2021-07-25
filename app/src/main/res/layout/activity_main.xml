@@ -7,13 +7,13 @@
     android:background="@drawable/ych_to_wonderland_fr_1"
     tools:context=".MainActivity">
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
         android:layout_width="77dp"
         android:layout_height="83dp"
         android:background="@drawable/custom_bottom"
         android:onClick="Clear"
-        android:text="@string/c"
+        android:text="@string/clean"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,13 +24,13 @@
         app:layout_constraintVertical_bias="0.334"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button26"
         android:layout_width="77dp"
         android:layout_height="83dp"
         android:background="@drawable/custom_bottom"
         android:onClick="OnAdd"
-        android:text="@string/plus"
+        android:text="@string/summation"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.95"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button15"
         android:layout_width="77dp"
         android:layout_height="83dp"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.645"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button16"
         android:layout_width="77dp"
         android:layout_height="83dp"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.645"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button17"
         android:layout_width="77dp"
         android:layout_height="83dp"
@@ -92,7 +92,7 @@
         app:layout_constraintVertical_bias="0.645"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button18"
         android:layout_width="77dp"
         android:layout_height="83dp"
@@ -109,7 +109,7 @@
         app:layout_constraintVertical_bias="0.645"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button19"
         android:layout_width="77dp"
         android:layout_height="83dp"
@@ -126,7 +126,7 @@
         app:layout_constraintVertical_bias="0.794"
         tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button20"
         android:layout_width="77dp"
         android:layout_height="83dp"
@@ -166,7 +166,7 @@
         android:layout_height="83dp"
         android:background="@drawable/custom_bottom"
         android:onClick="OnAdd"
-        android:text="@string/subtraction"
+        android:text="@string/subtract"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -217,7 +217,7 @@
         android:layout_height="83dp"
         android:background="@drawable/custom_bottom"
         android:onClick="OnCalculate"
-        android:text="@string/equals"
+        android:text="@string/result"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -297,36 +297,48 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        style="@style/MyTextStyle"
         android:id="@+id/textView"
-        android:layout_width="364dp"
-        android:layout_height="79dp"
-        android:background="#E385A3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text_insert"
         android:padding="10sp"
-        android:text="@string/program_name"
+        android:text="@string/name_programe"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        />
+        app:layout_constraintVertical_bias="0.056" />
 
     <EditText
+        style="@style/MyTextStyle"
         android:id="@+id/editTextNumber"
-        android:layout_width="363dp"
+        android:layout_width="329dp"
         android:layout_height="55dp"
         android:background="@drawable/custom_edit_text_insert"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.167" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/MyTextStyle"
+        android:id="@+id/buttonSettings"
+        android:layout_width="104dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_bottom"
+        android:onClick="onSwitchStettings"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
